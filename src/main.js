@@ -1,12 +1,13 @@
-import Vue from 'vue'
+import { createApp } from 'vue';
 import App from './App.vue'
 import router from './router'
 import store from './store'
 
-Vue.config.productionTip = false
+// 全局引入图标
+import myIcon from '@/components/common/my-icon.vue'
 
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+const vue = createApp(App)
+vue.component('my-icon', myIcon)
+vue.use(router).use(store).mount('#app')
+
+
