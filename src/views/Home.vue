@@ -1,36 +1,75 @@
 <template>
   <div class="home">
     <div class="wrapper">
-      <div>
-        <my-icon id="icon-wangluo" color="text-warning" class="network" />
-        <div class="text">欢 迎 查 看 我 的 简 历</div>
+      <bar icon-id="icon-wangluo" icon-color="text-warning" icon-size="35">欢 迎 查 看 我 的 简 历</bar>
+      <div class="w-100">
+        <content-header>
+          <template #name>{{title}}</template>
+          <template #des>{{des}}</template>
+          <template #zan>已赞300次</template>
+        </content-header>
+        <!-- <transition>
+          <router-view></router-view>
+        </transition>-->
+        <router-view v-slot="{ Component }" class="pre-scrollable" style="max-height:70vh">
+          <transition enter-active-class="animate__animated animate__zoomIn">
+            <component :is="Component" />
+          </transition>
+        </router-view>
       </div>
-      <div>
-        <div class="content-header">
-          <div>
-            <h1>任帅霖</h1>
-          </div>
-          <h6>点赞300次</h6>
-        </div>
-      </div>
-      <img src="../assets/img/user.jpg" alt="头像" class="user img-thumbnail" />
+      <user-profile :src="src" />
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-import { ref } from "vue";
-const isShow = ref(false);
-const change = () => (isShow.value = !isShow.value);
+//引入头像
+import userProfile from "@/components/user-profile/user-profile.vue";
+//引入侧边栏
+import bar from "@/components/bar/bar.vue";
+//引入头部信息
+import contentHeader from "../components/content-header/content-header.vue";
+//引入监听
+import { watch, ref, watchEffect } from "vue";
+import { useRouter } from "vue-router";
+
 export default {
   name: "Home",
-  components: {},
+  components: { userProfile, bar, contentHeader },
   setup() {
+    const router = useRouter();
+    const title = ref();
+    const des = ref("");
+    // watch(
+    //   router.currentRoute,
+    //   ({ path, name }) => {
+    //     if (path === "/") {
+    //       title.value = "----任 帅 霖----";
+    //     } else {
+    //       title.value = name;
+    //     }
+    //   },
+    //   {
+    //     immediate: true,
+    //   }
+    // );
+    watchEffect(() => {
+      const { path, name } = router.currentRoute.value;
+      if (path === "/") {
+        title.value = "Vue3.0简历";
+      } else {
+        title.value = "";
+      }
+      if (path === "/") {
+        des.value = "";
+      } else {
+        des.value = name;
+      }
+    });
     return {
-      isShow,
-      change,
+      src: require("../assets/img/user.jpg"),
+      title,
+      des,
     };
   },
 };
@@ -57,44 +96,13 @@ export default {
   justify-content: space-between;
   overflow: hidden;
 }
-.user {
-  min-width: 100px;
-  height: 40vh;
-  margin: 10px;
-  width: 200px;
+.pre-scrollable {
 }
-.network {
-  width: 4vw;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin-left: 5px; */
+::-webkit-scrollbar {
+  display: none;
 }
-.text {
-  width: 4vw;
-  height: 80vh;
-  font-size: 30px;
-
-  color: rgb(255, 191, 121);
-  background-color: rgb(52, 57, 92);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  writing-mode: vertical-lr;
-  font-size: 20px;
-  /* opacity: ; */
-}
-.content-header {
-  width: 100%;
-  height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-.content-header h1 {
-  color: rgb(6, 255, 247);
-}
+/* ::-webkit-scrollbar {
+  width: 2px;
+  background: none;
+} */
 </style>
