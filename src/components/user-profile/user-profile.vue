@@ -1,5 +1,5 @@
 <template>
-  <img :src="src" alt="头像" class="user img-thumbnail" />
+  <img :src="src " alt="头像" class="user img-thumbnail" />
 </template>
 
 <script>

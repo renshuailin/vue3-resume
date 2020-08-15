@@ -3,7 +3,7 @@
     <h4 :class="textColor" :style="{fontSize:`${textSize}px`}">
       <slot></slot>
     </h4>
-    <div :class="['rounded',tipColor]"></div>
+    <div :class="[' rounded',tipColor]"></div>
   </div>
 </template>
 
