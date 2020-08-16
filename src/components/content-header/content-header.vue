@@ -5,7 +5,7 @@
         <slot name="name"></slot>
       </h1>
       <h1>
-        <slot name="des "></slot>
+        <slot name="des"></slot>
       </h1>
     </div>
     <h6>

@@ -96,8 +96,7 @@ export default {
   justify-content: space-between;
   overflow: hidden;
 }
-.pre-scrollable {
-}
+
 ::-webkit-scrollbar {
   display: none;
 }
