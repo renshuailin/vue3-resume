@@ -5,7 +5,7 @@
       <div id="box">
         <p class="text-white">
           影响元素之间的间距是可以通过style的margin或padding属性来实现，但这两个属性本意并不相同；margin影响的是本元素与相邻外界元素之间的距离，这里简称外边距；padding影响的元素本身与其内部子元素之间的距离，简称为内填充。
-          bootstrap4提供了简写的class名，名称分别以m-开头和p-开头的类。 影响元素之间的间距是可以通过style的margin或padding属性来实现，但这两个属性本意并不相同；margin影响的是本元素与相邻外界元素之间的距离，这里简称外边距；padding影响的元素本身与其内部子元素之间的距离，简称为内填充。
+          bootstrap4提供了在形参V字形从v简写的class名，名称分别以m-开头和p-开头的类。 影响元素之间的间距是可以通过style的margin或padding属性来实现，但这两个属性本意并不相同；margin影响的是本元素与相邻外界元素之间的距离，这里简称外边距；padding影响的元素本身与其内部子元素之间的距离，简称为内填充。
           bootstrap4提供了简写的class名，名称分别以m-开头和p-开头的类。 影响元素之间的间距是可以通过style的margin或padding属性来实现，但这两个属性本意并不相同；margin影响的是本元素与相邻外界元素之间的距离，这里简称外边距；padding影响的元素本身与其内部子元素之间的距离，简称为内填充。
           bootstrap4提供了简写的class名，名称分别以m-开头和p-开头的类。
         </p>

@@ -1,5 +1,5 @@
 <template>
-  <div>skills</div>
+  <div>技能点</div>
 </template>
 
 <script>
