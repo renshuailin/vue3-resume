@@ -48,5 +48,9 @@ export default {
   writing-mode: vertical-lr;
   font-size: 20px;
   /* opacity: ; */
+  transition: all ease 1s;
+}
+.text:hover {
+  font-size: 30px;
 }
 </style>

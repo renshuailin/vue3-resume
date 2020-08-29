@@ -6,7 +6,7 @@ export const childrenRoute = [
   },
   {
     path: '/About',
-    name: '简 历',
+    name: '基 本 信 息',
     component: () => import('../views/About.vue')
   },
   {

@@ -18,6 +18,6 @@ export default {
   min-width: 100px;
   height: 38vh;
   margin: 10px;
-  width: 250px;
+  width: 260px;
 }
 </style>

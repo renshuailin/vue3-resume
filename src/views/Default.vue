@@ -3,7 +3,7 @@
     <div class="row">
       <button class="col btn btn-light rounded border-0" @click="toPage('About')">
         <my-icon id="icon-tubiaozhizuomoban" color="white" size="48" />
-        <h3>个 人 简 历</h3>
+        <h3>基 本 信 息</h3>
       </button>
       <button class="col btn btn-light rounded border-0" @click="toPage('skill')">
         <my-icon id="icon-jurassic_report" color="text-warning" size="45" />
