@@ -50,11 +50,36 @@
         <li>在工作中及时与项目主管进行需求沟通，在规定的时间内，提前完成设计产品的交付</li>
       </ul>
     </div>
+    <tip text-color="text-warning" style=" text-align: center;">给我点赞吧！</tip>
+    <describe-body class="d-flex align-items-center justify-content-center">
+      <push-button icon-id="icon-zan" @click="changePraise()">点赞呀</push-button>
+      <h1 class="text-white">已被点赞{{praise}}次</h1>
+    </describe-body>
   </div>
 </template>
 
 <script>
-export default {};
+import { praise, changePraise } from "@/lib/zan.js";
+
+import describeBody from "@/components/page-body/describe-body.vue";
+import profile from "@/components/page-body/profile/profile.vue";
+import info from "@/components/page-body/info/info.vue";
+import pushButton from "../components/push-button/push-button.vue";
+// import { computed } from "vue";
+export default {
+  components: {
+    describeBody,
+    profile,
+    info,
+    pushButton,
+  },
+  setup() {
+    return {
+      praise,
+      changePraise,
+    };
+  },
+};
 </script>
 
 <style scoped>
@@ -92,9 +117,7 @@ p {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-ul {
-  /* height: 160px; */
-}
+
 li {
   margin-left: 30px;
   line-height: 32px;

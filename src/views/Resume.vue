@@ -203,9 +203,7 @@ p {
   border-radius: 5px;
   /* box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); */
 }
-ul {
-  /* height: 160px; */
-}
+
 li {
   margin-left: 30px;
   line-height: 32px;

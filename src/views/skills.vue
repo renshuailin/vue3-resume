@@ -15,11 +15,36 @@
         <p class="text-white">精通photoshop</p>
       </div>
     </div>
+    <tip text-color="text-warning" style=" text-align: center;">给我点赞吧！</tip>
+
+    <describe-body class="d-flex align-items-center justify-content-center">
+      <push-button icon-id="icon-zan" @click="changePraise()">点赞呀</push-button>
+      <h1 class="text-white">已被点赞{{praise}}次</h1>
+    </describe-body>
   </div>
 </template>
 
 <script>
-export default {};
+import { praise, changePraise } from "@/lib/zan.js";
+
+import describeBody from "@/components/page-body/describe-body.vue";
+import profile from "@/components/page-body/profile/profile.vue";
+import info from "@/components/page-body/info/info.vue";
+import pushButton from "../components/push-button/push-button.vue";
+export default {
+  components: {
+    describeBody,
+    profile,
+    info,
+    pushButton,
+  },
+  setup() {
+    return {
+      praise,
+      changePraise,
+    };
+  },
+};
 </script>
 
 <style scoped>

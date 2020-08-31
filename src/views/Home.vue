@@ -32,7 +32,7 @@
         <content-header>
           <template #name>{{title}}</template>
           <template #des>{{des}}</template>
-          <template #zan>已赞300次</template>
+          <template #zan>已赞{{praise}}次</template>
         </content-header>
         <!-- <transition>
           <router-view></router-view>
@@ -49,6 +49,8 @@
 </template>
 
 <script>
+// 赞
+import { praise } from "@/lib/zan.js";
 //引入头像
 import userProfile from "@/components/user-profile/user-profile.vue";
 //引入侧边栏
@@ -82,7 +84,7 @@ export default {
     watchEffect(() => {
       const { path, name } = router.currentRoute.value;
       if (path === "/") {
-        title.value = "Vue3.0简历";
+        title.value = "我的在线简历";
       } else {
         title.value = "";
       }
@@ -96,6 +98,7 @@ export default {
       src: require("../assets/img/user.jpg"),
       title,
       des,
+      praise,
     };
   },
 };

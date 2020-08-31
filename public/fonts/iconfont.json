@@ -1,0 +1,72 @@
+{
+  "id": "2004078",
+  "name": "vue3",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "696399",
+      "name": "赞",
+      "font_class": "zan",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "588730",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e6fc",
+      "unicode_decimal": 59132
+    },
+    {
+      "icon_id": "2155829",
+      "name": "工具箱",
+      "font_class": "tool-cabinet_icon",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "2193704",
+      "name": "图例位置-右下",
+      "font_class": "youxia",
+      "unicode": "e6d0",
+      "unicode_decimal": 59088
+    },
+    {
+      "icon_id": "3819716",
+      "name": "专业知识技能",
+      "font_class": "zhuanyezhishijineng",
+      "unicode": "e7b6",
+      "unicode_decimal": 59318
+    },
+    {
+      "icon_id": "4308449",
+      "name": "信息",
+      "font_class": "tubiaozhizuomoban",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "6582366",
+      "name": "网络",
+      "font_class": "wangluo",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "10594765",
+      "name": "表-报告_jurassic",
+      "font_class": "jurassic_report",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "16416738",
+      "name": "学校",
+      "font_class": "xuexiao",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    }
+  ]
+}

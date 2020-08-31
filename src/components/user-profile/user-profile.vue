@@ -19,5 +19,7 @@ export default {
   height: 38vh;
   margin: 10px;
   width: 260px;
+  /* background-size: cover; */
+  object-fit: cover;
 }
 </style>
