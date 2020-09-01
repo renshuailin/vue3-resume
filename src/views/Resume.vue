@@ -2,7 +2,7 @@
   <div class="about">
     <div class="content">
       <div class="info">
-        <h3 class="p-10">"吃了么"点餐系统</h3>
+        <h3 class="p-10">"恰哒么"点餐系统</h3>
         <a
           class="btn btn-info"
           target="_blank"
@@ -14,7 +14,7 @@
       <div class="info">
         <div id="box" class="w-100">
           <p class="text-white">• 该项目使用了Vue全家桶实现的一个在线点餐系统</p>
-          <p class="text-white">• 本项目包含了首页、订单、我的等页面，实现了手机验证码登录、高德定位、筛选等功能</p>
+          <p class="text-white">• 本项目包含了首页、订单、我的等页面，实现了手机验证码登录、高德定位API、筛选等功能</p>
           <p class="text-white">• 项目使用vw/vh等技术适配移动端页面，以Vue-Cli为基础项目模板，引用Mint-UI作为移动端交互。</p>
           <p class="text-white">• 通过Vue Router实现路由的跳转、异步加载、权限验证、数据传递等</p>
           <p class="text-white">• 通过vuex实现状态管理，用axios获取页面数据，并对接口进行了封装</p>
