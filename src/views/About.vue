@@ -17,8 +17,8 @@
     <div class="content box">
       <h3 class="p-10">教育经历</h3>
       <div id="box" class="info">
-        <p class="text-white">2013.6--2016.9</p>
-        <p class="text-white" style="margin-right:auto">湖南大众传媒职业技术学院</p>
+        <p class="text-white">2013.9--2016.6</p>
+        <p class="text-white" style="margin-right:auto">湖南大众职业技术学院</p>
         <p class="text-white">环境与艺术专业</p>
       </div>
       <p id="box" class="text-white">色彩搭配、设计学、艺术与材料学、展示设计、信息创意设计、人体工程学、设计构成、版式设计、Photoshop、CAD等</p>
